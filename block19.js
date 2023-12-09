@@ -39,7 +39,7 @@ updateAveragePrice();
 
 setInterval(() => {
     const newFreelancer = {
-        name: 'Carol', occupation: 'Programmer', startingPrice: 70};
+        name:'Carol',occupation:'Programmer',startingPrice: 70};
    
       freelancers.push(newFreelancer);
     updateFreelancersList();
