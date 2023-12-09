@@ -2,16 +2,8 @@ const freelancersList = document.getElementById('freelancers-list');
 const averagePrice = document.getElementById('average-price');
 
 const freelancers = [
-    {
-        name: 'Alice',
-        occupation: 'Writer',
-        startingPrice: 30
-    },
-    {
-        name: 'Bob',
-        occupation: 'Teacher',
-        startingPrice: 50
-    }
+    { name:'Alice',occupation:'Writer',startingPrice: 30},
+    { name:'Bob',occupation:'Teacher',startingPrice: 50 },
 ];
 
 const updateFreelancersList = () => {
@@ -47,11 +39,9 @@ updateAveragePrice();
 
 setInterval(() => {
     const newFreelancer = {
-        name: 'Carol',
-        occupation: 'Programmer',
-        startingPrice: 70
-    };
-    freelancers.push(newFreelancer);
+        name: 'Carol', occupation: 'Programmer', startingPrice: 70};
+   
+      freelancers.push(newFreelancer);
     updateFreelancersList();
     updateAveragePrice();
 }, 5000);
